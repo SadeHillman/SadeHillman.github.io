@@ -51,3 +51,22 @@ p{
 #about-me{
   text-align: center;
  }
+
+ /****** Card-Container *******/
+
+ #card-container{
+  background-color: beige;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px;
+}
+
+h3{
+  text-align: center;
+}
+
+.card{
+  border: solid 2px grey;
+  margin: 20px;
+  text-align: left;
+}
