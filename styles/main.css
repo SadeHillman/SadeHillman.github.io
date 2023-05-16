@@ -62,11 +62,23 @@ p{
 }
 
 h3{
-  text-align: center;
+  padding: 20px;
 }
 
 .card{
   border: solid 2px grey;
   margin: 20px;
   text-align: left;
+}
+
+footer{
+  margin: 20px;
+}
+
+@media (max-width: 770px) {
+
+  #card-container{
+    display: block;
+    margin: 20px;
+  }
 }
