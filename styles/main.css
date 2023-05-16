@@ -29,3 +29,19 @@ a{
 a:hover{
  color: grey;
 }
+
+/****** INTRO ******/
+.banner{
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  background-color: beige;
+  font-size: 30px;
+  margin: 20px;
+  padding: 70px;
+  border: solid 2px grey;
+}
+
+p{
+  font-size: 20px;
+  padding: 20px;
+}
