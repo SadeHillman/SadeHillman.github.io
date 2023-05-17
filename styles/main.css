@@ -92,4 +92,7 @@ footer{
     display: block;
     padding: 20px;
   }
+  .card{
+    margin: 20px;
+  }
 }
