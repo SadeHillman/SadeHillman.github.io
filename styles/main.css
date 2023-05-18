@@ -62,7 +62,6 @@ h3{
 }
 
 .card{
-  border: solid 2px grey;
   padding: 20px;
   text-align: left;
 }
@@ -71,6 +70,7 @@ h3{
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  border-radius: 20%;
 }
 
 a{
