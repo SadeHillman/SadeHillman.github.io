@@ -59,20 +59,21 @@ h2{
 
 h3{
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   padding: 20px;
+  font-weight: bolder;
 }
 
 .card{
   padding: 20px;
   text-align: center;
+
 }
 .card-img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 a{
@@ -141,6 +142,12 @@ footer{
   }
   .card{
     margin: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border: solid 3px #906c51;
+    box-shadow: 0 2px 2px 0 gray;
+    margin: 20px;
+
   }
 }
 
