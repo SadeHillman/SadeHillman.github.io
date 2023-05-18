@@ -7,9 +7,7 @@
 
 
 nav{
-  margin-right: 20px;
   font-size: 20px;
-  color: gray;
   display: flex;
   justify-content: right;
 }
@@ -23,7 +21,6 @@ nav{
 .a-nav{
   padding-left: 20px;
   text-decoration-line: none;
-  color: black;
 }
 
 a:hover{
@@ -34,14 +31,14 @@ a:hover{
 .banner{
   font-family: 'Roboto Mono', monospace;
   text-align: center;
-  background-color: beige;
   font-size: 30px;
-  margin: 20px;
   padding: 70px;
-  border: solid 2px grey;
+  background-image: url(../images/banner.jpg);
+  background-position: bottom;
+  background-size: cover;
 }
 
-p{
+h2{
   font-size: 20px;
   padding: 20px;
 }
@@ -55,7 +52,6 @@ p{
  /****** Card-Container *******/
 
  #card-container{
-  background-color: beige;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 20px;
