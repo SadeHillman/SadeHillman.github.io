@@ -78,8 +78,51 @@ text-decoration-line: none;
 color: black;
 }
 
+/******* Contact-Form *********/
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  width: 80%;
+  background-color: #906c51;
+  border-radius: 25px 25px 0 0;
+}
+label{
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  padding: 10px 0;
+}
+
+table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 90%;
+  border: 2px solid whitesmoke;
+  border-radius: 12px;
+}
+
 footer{
-  margin: 20px;
+
 }
 
 @media (max-width: 770px) {
