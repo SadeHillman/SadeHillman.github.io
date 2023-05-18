@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <title>Blog | inline vs inline-block</title>
+</head>
+<body>
+  <h1>CSS Display: inline vs inline-blocks</h1>
+<p>I chose to research more about the use of <em>"display: inline;"</em> vs <em>"display: inline-block;"</em> because it is one of the things I had difficulty understanding the most!
+  While trying to get the layout of my web page right I noticed when using different element types they all moved differently.
+</p>
+
+<h4>First, to understand what's happening let's look at 2 types of elements:</h4>
+
+<p>1. I created the below list using &lt;p&gt; tags. Paragraphs are a "block" element. Block elements take up the whole width of a web page.</p>
+<p class="example-one">One</p>
+<p class="example-one">Two</p>
+<p class="example-one">Three</p>
+
+
+<p>2. I created the above links using &lt;a&gt; tags. Links are a "inline" element. Link elements only take up the space of the content.</p>
+<a class="example-two" href="">One</a>
+<a class="example-two" href="">Two</a>
+<a class="example-two" href="">Three</a>
+
+<h4>What does it mean to display: inline;?</h4>
+<p>Inline elements only taking up the space of its context means we aren't able to add margin, padding, height or width attributes to style. While this isn't very 
+  useful when trying to edit your layout it's a great way to prevent any issues with links being bigger or out-of-place when nested in paragraphs.</p>
+
+<h4>What does it mean to display: inline-block;?</h4>
+<p>Inline-block makes it possible for us to take inline elements and display them as inline-level blocks. This means it will hold the inline format but now we can add margins, padding, height and width.
+This is perfect for displaying multiple links in a button style.</p>
+
+<h4>Conclusion</h4>
+<p>Both inline and inline-block displays have their important roles throughout our web page layouts! One helps keep our page manageable and easy to continue adding CSS throughout while the other allows us
+  to create beautiful design elements. I wish I had started on this earlier, it would have helped a lot when setting
+  up my navigation bar for my home page :).
+</p>
+</body>
+</html>

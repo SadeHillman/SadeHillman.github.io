@@ -163,3 +163,10 @@ footer{
   }
 
 }
+
+/************************************ CSS DISPLAY INLINE VS INLINE_BLOCK *****************************************/
+
+.example-one,
+.example-two{
+  border: solid 3px #906c51;
+}
