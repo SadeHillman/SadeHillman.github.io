@@ -11,36 +11,56 @@
   <title>Blog | inline vs inline-block</title>
 </head>
 <body>
+  <Nav>
+    <a id="logo" href="../index.html">Sadé-Amor</a>
+    <a class="a-nav" href="#about">About</a>
+    <a class="a-nav" href="#list-container">Types</a>
+    <a class="a-nav" href="#explain">Explained</a>
+    <a class="a-nav" href="#contact-form"></a>
+  </Nav>
+  <div class="banner">
   <h1>CSS Display: inline vs inline-blocks</h1>
+</div>
+<div id="about">
+  <h3>About</h3>
 <p>I chose to research more about the use of <em>"display: inline;"</em> vs <em>"display: inline-block;"</em> because it is one of the things I had difficulty understanding the most!
   While trying to get the layout of my web page right I noticed when using different element types they all moved differently.
 </p>
+</div>
+<div id="list-container">
 
-<h4>First, to understand what's happening let's look at 2 types of elements:</h4>
+<h3>First, to understand what's happening let's look at 2 types of elements:</h3>
 
-<p>1. I created the below list using &lt;p&gt; tags. Paragraphs are a "block" element. Block elements take up the whole width of a web page.</p>
-<p class="example-one">One</p>
-<p class="example-one">Two</p>
-<p class="example-one">Three</p>
-
-
-<p>2. I created the above links using &lt;a&gt; tags. Links are a "inline" element. Link elements only take up the space of the content.</p>
+<ol>
+<li>Inline - I created the below links using &lt;a&gt; tags. Links are a "inline" element. Link elements only take up the space of the content.</li>
+<div class="spacer"></div>
 <a class="example-two" href="">One</a>
 <a class="example-two" href="">Two</a>
 <a class="example-two" href="">Three</a>
-
-<h4>What does it mean to display: inline;?</h4>
-<p>Inline elements only taking up the space of its context means we aren't able to add margin, padding, height or width attributes to style. While this isn't very 
+<div class="spacer"></div>
+<li>Block - I created the below list using &lt;p&gt; tags. Paragraphs are a "block" element. Block elements take up the whole width of a web page.</li>
+<p class="example-one">One</p>
+<p class="example-one">Two</p>
+<p class="example-one">Three</p>
+</ol>
+</div>
+<div id="explain">
+<h3>What does it mean to display: inline;?</h3>
+<p>Using the display: inline; property only takes up the space of its content. This means we aren't able to add margin, padding, height or width attributes to style. While this isn't very 
   useful when trying to edit your layout it's a great way to prevent any issues with links being bigger or out-of-place when nested in paragraphs.</p>
 
-<h4>What does it mean to display: inline-block;?</h4>
-<p>Inline-block makes it possible for us to take inline elements and display them as inline-level blocks. This means it will hold the inline format but now we can add margins, padding, height and width.
+<h3>What does it mean to display: inline-block;?</h3>
+<p>Using display: inline-block; makes it possible for us to take inline elements and display them as inline-level blocks. This means it will hold the inline format but now we can add margins, padding, height and width.
 This is perfect for displaying multiple links in a button style.</p>
 
-<h4>Conclusion</h4>
+<h3>Conclusion</h3>
 <p>Both inline and inline-block displays have their important roles throughout our web page layouts! One helps keep our page manageable and easy to continue adding CSS throughout while the other allows us
   to create beautiful design elements. I wish I had started on this earlier, it would have helped a lot when setting
   up my navigation bar for my home page :).
 </p>
+</div>
 </body>
+<footer>
+
+</footer>
 </html>
