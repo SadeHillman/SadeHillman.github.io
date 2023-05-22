@@ -2,6 +2,10 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+p, ul, ol{
+  padding: 0 15%;
+}
+
 /******* Navigation bar *******/
 
 
@@ -64,9 +68,14 @@ h3{
 }
 
 .card{
-  padding: 20px;
+  padding: 20%;
   text-align: center;
 
+}
+ul {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
 }
 img{
   display: block;
@@ -97,13 +106,13 @@ form{
   align-items: center;
   padding: 5%;
   width: 80%;
-  background-color: #906c51;
+  background-color: #eaeaea;
   border-radius: 25px 25px 0 0;
 }
+
 label{
   font-size: larger;
   font-weight: bolder;
-  color: white;
   padding: 10px 0;
 }
 
@@ -126,15 +135,14 @@ textarea {
 }
 
 footer{
-  color: antiquewhite;
-  background-color: #906c51;
+  background-color: #eaeaea;
   padding: 10px;
   margin-bottom: 0;
   font-size: small;
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
   #card-container{
     display: block;
@@ -177,5 +185,4 @@ footer{
 }
 
 .return{
-  color: antiquewhite;
 }
