@@ -16,7 +16,6 @@
     <a class="a-nav" href="#about">About</a>
     <a class="a-nav" href="#list-container">Types</a>
     <a class="a-nav" href="#explain">Explained</a>
-    <a class="a-nav" href="#contact-form"></a>
   </Nav>
   <div class="banner">
   <h1>CSS Display: inline vs inline-blocks</h1>
@@ -29,36 +28,47 @@
 </div>
 <div id="list-container">
 
-<h3>First, to understand what's happening let's look at 2 types of elements:</h3>
+<h3>First, to understand what's happening with each css property individualy</h3>
 
 <ol>
-<li>Inline - I created the below links using &lt;a&gt; tags. Links are a "inline" element. Link elements only take up the space of the content.</li>
+<li>inline - I created the list below using &lt;a&gt; tags. &lt;a&gt; tags are an "inline" element. Inline elements only take up the space of the content so they can appear next to each other on the same line.</li>
 <div class="spacer"></div>
-<a class="example-two" href="">One</a>
-<a class="example-two" href="">Two</a>
-<a class="example-two" href="">Three</a>
+<a class="example-two" href="">inline</a>
+<a class="example-two" href="">inline</a>
+<a class="example-two" href="">inline</a>
 <div class="spacer"></div>
-<li>Block - I created the below list using &lt;p&gt; tags. Paragraphs are a "block" element. Block elements take up the whole width of a web page.</li>
-<p class="example-one">One</p>
-<p class="example-one">Two</p>
-<p class="example-one">Three</p>
+<li>block - I created next list using &lt;p&gt; tags. &lt;p&gt; tags are a "block" element. Block elements take up the whole width of a page, each time you add one it will appear on a new line.</li>
+<p class="example-one">block</p>
+<p class="example-one">block</p>
+<p class="example-one">block</p>
+<div class="spacer"></div>
+<li>inline-block - I created the following list using &lt;a&gt; tags (an inline element) but also added a height and width of 100px using display: inline-block; in CSS.</li><br>
+<a class="example-three" href="">inline-block</a>
+<a class="example-three" href="">inline-block</a>
+<a class="example-three" href="">inline-block</a>
 </ol>
 </div>
+
+
 <div id="explain">
 <h3>What does it mean to display: inline;?</h3>
-<p>Using the display: inline; property only takes up the space of its content. This means we aren't able to add margin, padding, height or width attributes to style. While this isn't very 
-  useful when trying to edit your layout it's a great way to prevent any issues with links being bigger or out-of-place when nested in paragraphs.</p>
+<img class="img-example" src="../images/inline.png" alt="">
+<p>Using the display: inline; property only takes up the space of its content. 
+  This means we aren't able to add height or width attributes to style. 
+ </p>
 
 <h3>What does it mean to display: inline-block;?</h3>
-<p>Using display: inline-block; makes it possible for us to take inline elements and display them as inline-level blocks. This means it will hold the inline format but now we can add margins, padding, height and width.
-This is perfect for displaying multiple links in a button style.</p>
+<img class="img-example" src="../images/inline-block.png" alt="">
+<p>Using display: inline-block; we can display elemennts with the inline format but now we can add height and width.
+</p>
 
-<h3>Conclusion</h3>
-<p>Both inline and inline-block displays have their important roles throughout our web page layouts! One helps keep our page manageable and easy to continue adding CSS throughout while the other allows us
-  to create beautiful design elements. I wish I had started on this earlier, it would have helped a lot when setting
+
+<p>Both inline and inline-block displays have their important roles throughout our web page layouts! Inline helps us 
+  add things like links inside paragraphs and keep them tidy without having to change a lot of properties. With inline-block we can
+  adjust the content to fit images and paragraphs on the same line. I wish I had started on this earlier, it would have helped a lot when setting
   up my navigation bar for my home page :).
 </p>
 </div>
 </body>
-<footer><a class="return"href="../index.html">Return to home page</a></footer>
+<footer><a class="return"href="../index.html">Home-Page</a></footer>
 </html>

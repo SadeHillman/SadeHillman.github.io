@@ -156,6 +156,9 @@ footer{
     box-shadow: 0 2px 2px 0 gray;
     margin: 20px;
 
+  }  
+  .img-example{
+    padding: 20px;
   }
 }
 
@@ -169,20 +172,24 @@ footer{
     width: 100%;
     margin-top: 40px;
   }
-
 }
 
 /************************************ CSS DISPLAY INLINE VS INLINE_BLOCK *****************************************/
 
 .example-one,
-.example-two{
+.example-two,
+.example-three{
   border: solid 3px #906c51;
+  text-align: center;
+}
+
+.example-three{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
 }
 
 .spacer{
   height: 20px;
   display: block;
-}
-
-.return{
 }
