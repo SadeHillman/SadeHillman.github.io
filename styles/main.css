@@ -143,6 +143,10 @@ footer{
 
 }
 
+.footer-icons img{
+  width: 30px;
+  height: 30px;
+}
 @media (max-width: 900px) {
 
   #card-container{
