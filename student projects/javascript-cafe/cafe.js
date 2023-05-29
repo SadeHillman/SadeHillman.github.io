@@ -99,6 +99,7 @@ function fillOrder() {
   displayCash()
   displayCustomerOrder()
 }
+displayCash()
 
 document.getElementById('fillOrder').onclick = fillOrder
 
