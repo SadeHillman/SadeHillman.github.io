@@ -19,6 +19,11 @@ let products = {
     stock: 1,
     price: 4.5,
   },
+
+  pickles: {
+    stock: 7,
+    price: 100,
+  },
 }
 
 function displayProducts() {
@@ -30,6 +35,27 @@ function displayProducts() {
     'Muffin: ' + products.muffin.stock
   document.getElementById('brownies').innerHTML =
     'Browines: ' + products.brownies.stock
+  document.getElementById('pickles').innerHTML =
+    'Pickles:' + products.pickles.stock
+
+  /******* Stretch Material
+    Find the products
+    Check Stock
+    Get the element
+    Display Out Of Stock elements 'Red'
+    *********/
+  let productNames = Object.keys(products)
+
+  for (let i = 0; i < productNames.length; i++) {
+    let productName = productNames[i]
+    let productStock = products[productName].stock
+    let productElement = document.getElementById(productName)
+
+    if (productStock < 1) {
+      productElement.style.color = 'red'
+    }
+    productElement.innerHTML = productName + ': ' + productStock
+  }
 }
 
 displayProducts()
