@@ -14,7 +14,7 @@
   <nav>
     <a class="a-nav" href="../index.html">Sadé-Amor</a>
   </nav>
-  <div class="banner">
+  <div class="banner scroll-reveal">
     <h1>Javascript & DOM</h1>
     </div>
     <div id="about">
@@ -27,19 +27,19 @@
   HTML is the foundation were able to get out layout in order and ready to add all of our CSS and Javascript properties. CSS lets us add our own unique styles and flare to our web pages. JavaScript works with html and 
   css to give us the moving bits and bobs that make webpages exciting like calculations at the press of a button or submitting forms from your web page to your email address.
   Squirtle is everything you need to build dynamic web site! </p>
-  <div class='squirtleContainer'>
-<div class='squirtle'>
-    <img src="../images/htmlSquirtle.png" alt="">
-    <p>HTML</p>
-</div>
-<div class='squirtle'>  
-  <img src="../images/cssSquirtle.png" alt=""> 
-  <p>CSS</p> 
-</div>
-<div class='squirtle'>  
-  <img src="../images/jsSquirtle.png" alt="">
-  <p>JavaScript</p>
-</div>
+<div class="slideshow scroll-reveal">
+  <div class="slide">
+    <img src="../images/htmlSquirtle.png" alt="HTML Squirtle">
+    <p class="caption">HTML</p>
+  </div>
+  <div class="slide">
+    <img src="../images/cssSquirtle.png" alt="CSS Squirtle">
+    <p class="caption">CSS</p>
+  </div>
+  <div class="slide">
+    <img src="../images/jsSquirtle.png" alt="JavaScript Squirtle">
+    <p class="caption">JavaScript</p>
+  </div>
 </div>
 <h3>Control Flow & Loops</h3>
 <p>Control flow dictates the order instructions are executed. Loops are essential components of control flow that enable the repetition of a specific set of instructions. Here what that would look like as a gamer:</p>
@@ -88,5 +88,8 @@ Like shortcuts, functions makes your code more organized and helps you play bett
 <img src="../images/Annie_0.jpg" alt="">
 </div>
 <footer><a class="return"href="../index.html">Home-Page</a></footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="../scrollReveal.js"></script>
+<script src="../slideshow.js"></script>
 </body>
 </html>
