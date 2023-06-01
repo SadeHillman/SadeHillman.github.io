@@ -175,6 +175,10 @@ footer{
     width: 100%;
     margin-top: 40px;
   }
+
+  .carbon{
+    width: 100%;
+  }
 }
 
 /************************************ CSS DISPLAY INLINE VS INLINE_BLOCK *****************************************/
@@ -222,4 +226,16 @@ footer{
 
 ol{
   margin-left: 15%;
+}
+.carbon{
+  width: 60%;
+}
+
+.bigCarbon{
+  width: 50vw;
+  height: 50vh;
+}
+
+.image-caption {
+  text-align: center;
 }
