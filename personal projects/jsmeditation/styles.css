@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* ********* Nav *********** */
+
+nav {
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px 0;
+}
+
+#logo{
+ position: absolute;
+ left: 10px;
+ padding-bottom: 10px;
+}
+
+.a-nav{
+  padding-left: 20px;
+  text-decoration-line: none;
+  color: black;
+}
+
+a:hover{
+ color: grey;
+}
+
+.app{
+height: 100vh;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.time-select, .sound-picker, .player-container{
+  height: 80%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.time-select button, 
+.sound-picker button{
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5 ease;
+}
+.time-select button:hover{
+  background-color: white;
+  color: black;
+}
+
+.sound-picker button{
+  border: none;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.sound-picker button:nth-child(1){
+  background: #497281;
+}
+.sound-picker button:nth-child(2){
+ background: #a14f49;
+}
+.sound-picker button img{
+  height: 50%;
+}
+
+.player-container{
+  position: relative;
+}
+
+.player-container svg{
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.time-display{
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+}
+
+video{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+body{
+  background-color: aliceblue;
+}
+
+@media only screen and (max-width: 950px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .time-select,
+  .sound-picker,
+  .player-container {
+    height: 30%;
+  }
+
+  .time-select button,
+  .sound-picker button {
+    width: 80%;
+    border: none;
+  }
+
+  .sound-picker button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .time-display {
+    font-size: 30px;
+  }
+
+  .player-container img{
+    width: 20px;
+    height: 30px;
+  }
+
+  .player-container svg{
+    width: 80px;
+  }
+
+  video {
+    object-fit: cover;
+  }
+}
