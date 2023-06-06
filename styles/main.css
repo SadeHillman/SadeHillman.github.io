@@ -86,6 +86,11 @@ a:hover {
   background-position: bottom;
   background-size: cover;
 }
+h1{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
 h2 {
   font-size: 20px;
@@ -244,6 +249,10 @@ ol {
   .navbar-list {
     text-align: center;
   }
+
+  h1{
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -254,6 +263,9 @@ ol {
   .a-nav {
     width: 100%;
     margin-top: 40px;
+  }
+  h1 {
+    font-size:30px;
   }
   .carbon {
     width: 100%;
