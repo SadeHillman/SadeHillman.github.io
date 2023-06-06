@@ -1,15 +1,16 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   font-family: 'Roboto Mono', monospace;
 }
 
-p, ul, ol{
+p,
+ul,
+ol {
   padding: 0 15%;
 }
 
 /******* Navigation bar *******/
-
-
-
 nav {
   position: sticky;
   top: 0;
@@ -21,12 +22,62 @@ nav {
   padding: 10px 0;
 }
 
-a:hover{
- color: grey;
+a:hover {
+  color: grey;
 }
 
-/****** INTRO ******/
-.banner{
+/* New Nav Bar */
+.navbar {
+  background-color: #f1f1f1;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  display: inline-block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 10;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.navbar-item:hover .dropdown-content {
+  display: block;
+}
+
+/********** INTRO **********/
+.banner {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
   font-size: 30px;
@@ -36,42 +87,41 @@ a:hover{
   background-size: cover;
 }
 
-h2{
+h2 {
   font-size: 20px;
   padding: 20px;
 }
 
 /******* ABOUT-ME *******/
-
-#about{
+#about {
   text-align: center;
- }
+}
 
- /****** Card-Container *******/
-
- #card-container{
+/****** Card-Container *******/
+#card-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 20px;
 }
 
-h3{
+h3 {
   text-align: center;
   padding: 20px;
   font-weight: bolder;
 }
 
-.card{
+.card {
   padding: 0 20%;
   text-align: center;
-
 }
+
 ul {
   list-style-type: none;
   display: inline-block;
   text-align: left;
 }
-img{
+
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -80,116 +130,27 @@ img{
   border-radius: 10%;
 }
 
-a{
-text-decoration-line: none;
-color: black;
-}
-
-/******* Contact-Form *********/
-
-#contact-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5%;
-  width: 80%;
-  background-color: #eaeaea;
-  border-radius: 25px 25px 0 0;
-}
-
-label{
-  font-size: larger;
-  font-weight: bolder;
-  padding: 10px 0;
-}
-
-table{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="submit"],
-textarea {
-  margin: 10px;
-  padding: 5px;
-  box-sizing: border-box;
-  width: 90%;
-  border: 2px solid whitesmoke;
-  border-radius: 12px;
-}
-
-footer{
-  background-color: #eaeaea;
-  padding: 10px;
-  margin-bottom: 0;
-  font-size: small;
-
-}
-
-.footer-icons img{
-  width: 30px;
-  height: 30px;
-}
-@media (max-width: 900px) {
-
-  #card-container{
-    display: block;
-  }
-  .card{
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10%;
-    border: solid 1px gray;
-    box-shadow: 0 2px 2px 0 gray;
-  }  
-  .img-example{
-    padding: 20px;
-  }
-}
-
-@media (max-width: 490px){
-
-  #logo{
-    width: 100%;
-    text-align: center;
-  }
-  .a-nav{
-    width: 100%;
-    margin-top: 40px;
-  }
-
-  .carbon{
-    width: 100%;
-  }
+a {
+  text-decoration-line: none;
+  color: black;
 }
 
 /************************************ CSS DISPLAY INLINE VS INLINE_BLOCK *****************************************/
 
 .example-one,
 .example-two,
-.example-three{
+.example-three {
   border: solid 3px #906c51;
   text-align: center;
 }
 
-.example-three{
+.example-three {
   display: inline-block;
   height: 100px;
   width: 100px;
 }
 
-.spacer{
+.spacer {
   height: 20px;
   display: block;
 }
@@ -218,13 +179,16 @@ footer{
 }
 
 @keyframes slideAnimation {
-  0%, 33.33% {
+  0%,
+  33.33% {
     opacity: 0;
   }
-  33.33%, 66.66% {
+  33.33%,
+  66.66% {
     opacity: 1;
   }
-  66.66%, 100% {
+  66.66%,
+  100% {
     opacity: 0;
   }
 }
@@ -245,14 +209,15 @@ footer{
   margin-top: 5px;
 }
 
-ol{
+ol {
   margin-left: 15%;
 }
-.carbon{
+
+.carbon {
   width: 60%;
 }
 
-.bigCarbon{
+.bigCarbon {
   width: 50vw;
   height: 50vh;
 }
@@ -261,57 +226,53 @@ ol{
   text-align: center;
 }
 
-/* New Nav Bar */
-.navbar {
-  background-color: #f1f1f1;
+@media (max-width: 900px) {
+  #card-container {
+    display: block;
+  }
+  .card {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10%;
+    border: solid 1px gray;
+    box-shadow: 0 2px 2px 0 gray;
+  }
+  .img-example {
+    padding: 20px;
+  }
+
+  .navbar-list {
+    text-align: center;
+  }
 }
 
-.navbar-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+@media (max-width: 490px) {
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
+  .a-nav {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .carbon {
+    width: 100%;
+  }  
+  
+  #home {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.navbar-item {
-  position: relative;
-  display: inline-block;
+footer {
+  background-color: #eaeaea;
+  padding: 10px;
+  margin-bottom: 0;
+  font-size: small;
 }
 
-.home {
-  position: absolute;
-  left: 10px;
-}
-
-.dropdown-btn {
-  display: inline-block;
-  padding: 12px 16px;
-  text-decoration: none;
-  color: #333;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 5px;
-  top: 100%;
-  left: 0;
-}
-
-.dropdown-item {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #333;
-}
-
-.dropdown-item:hover {
-  background-color: #ddd;
-}
-
-.navbar-item:hover .dropdown-content {
-  display: block;
+.footer-icons img {
+  width: 30px;
+  height: 30px;
 }
