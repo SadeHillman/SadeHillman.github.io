@@ -4,14 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>JavaScript Cafe</title>
+    <link rel="stylesheet" href="/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link href="/student projects/javascript-cafe/styles.css" rel="stylesheet" type="text/css" />
     </head>
   <body>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li id="home" class="navbar-item"><a href="../index.html">Home</a></li>
+        <li class="navbar-item">
+          <a href="../index.html#core-blog" class="dropdown-btn">Core-Blogs</a>
+          <div class="dropdown-content">
+            <a href="../blog/emotional-intellegence.html" class="dropdown-item">Emotional-Intellegence</a>
+            <a href="../blog/learning-plan.html" class="dropdown-item">Learning-Plan</a>
+            <a href="../blog/identity-values.html" class="dropdown-item">Identity</a>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a href="../index.html#tech-blog" class="dropdown-btn">Tech-Blogs</a>
+          <div class="dropdown-content">
+            <a href="../blog/javascript-dom.html" class="dropdown-item">JavaScipt & DOM</a>
+            <a href="../blog/html-css.html" class="dropdown-item">CSS inline vs inline-block</a>
+          </div>
+        </li>
+        <li class="navbar-item">
+          <a href="../index.html#projects" class="dropdown-btn">Projects</a>
+          <div class="dropdown-content">
+            <a href="../personal projects/jsmeditation/maditation.html" class="dropdown-item">Meditation App</a>
+            <a href="../personal projects/jsbouncyballs/bouncyballs.html" class="dropdown-item">BouncyBalls</a>
+            <a href="../student projects/javacafe.html" class="dropdown-item">JavaScript Café</a>
+          </div>
+        </li>
+      </ul>
+    </nav>  
     <h1>JavaScript Café</h1>
-    <div class="container"></div>
+    <div class="container">
     <p id="whiteCoffee"></p>
     <p id="blackCoffee"></p>
     <p id="muffin"></p>
@@ -22,7 +51,7 @@
     <p id="cash"></p>
     <button class ="button" id="customerButton">Generate Order</button>
     <button class ="button" id="fillOrder">Complete Order</button>
-
+    </div>
     <script src="javascript-cafe/cafe.js"></script>
   </body>
 </html>
