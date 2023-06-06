@@ -11,13 +11,34 @@
   <title>Sade Homepage</title>
 </head>
 <body>
-    <nav>
-    <a id="logo" href="">Sadé-Amor</a>
-    <a class="a-nav" href="#about">About</a>
-    <a class="a-nav" href="#card-container">Blogs</a>
-    <a class="a-nav" href="#projects">Projects</a>
-    <a class="a-nav" href="#contact-form">Contact</a>
-  </nav>
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li id="home" class="navbar-item"><a href="index.html">Home</a></li>
+      <li class="navbar-item">
+        <a href="#core-blog" class="dropdown-btn">Core-Blogs</a>
+        <div class="dropdown-content">
+          <a href="blog/emotional-intellegence.html" class="dropdown-item">Emotional-Intellegence</a>
+          <a href="blog/learning-plan.html" class="dropdown-item">Learning-Plan</a>
+          <a href="blog/identity-values.html" class="dropdown-item">Identity</a>
+        </div>
+      </li>
+      <li class="navbar-item">
+        <a href="#tech-blog" class="dropdown-btn">Tech-Blogs</a>
+        <div class="dropdown-content">
+          <a href="blog/javascript-dom.html" class="dropdown-item">JavaScipt & DOM</a>
+          <a href="blog/html-css.html" class="dropdown-item">CSS inline vs inline-block</a>
+        </div>
+      </li>
+      <li class="navbar-item">
+        <a href="#projects" class="dropdown-btn">Projects</a>
+        <div class="dropdown-content">
+          <a href="/personal projects/jsmeditation/maditation.html" class="dropdown-item">Meditation App</a>
+          <a href="/personal projects/jsbouncyballs/bouncyballs.html" class="dropdown-item">BouncyBalls</a>
+          <a href="/student projects/javacafe.html" class="dropdown-item">JavaScript Café</a>
+        </div>
+      </li>
+    </ul>
+  </nav>  
   <div class="banner scroll-reveal">
     <h1>Kia Ora</h1>
     <h2>Im Sadé Hillman, welcome to my home page :)</h2>
@@ -31,10 +52,9 @@
 
   </div>
   <div class="scroll-reveal" id="card-container">
-    <div class="card">      
+    <div id='core-blog'class="card">      
       <h3>Core Blogs</h3>      
       <img class="card-img" src="images/blogimg.jpg" alt="coffee,pen,paper">
-
       <ul>
         <li><a href="blog/te-houtaewa-template.html">Stories and Legends</a></li><br>
         <li><a href="blog/learning-plan.html">Learning Plan</a></li><br>
@@ -42,52 +62,37 @@
         <li><a href="blog/emotional-intellegence.html">Emotional Intelligence</a></li><br>
       </ul>
     </div>
+    
     <div id="tech-blog" class="card">
       <h3>Tech-Blogs</h3>
       <img src="images/tech-blog.png" alt="laptop displaying code">
-     <ul>
-      <li><a href="blog/html-css.html">CSS :inline vs :inline-block</a></li><br>
-    <li><a href="blog/javascript-dom.html">JavaScipt & DOM</a></li>
-    </ul>
+      <ul>
+        <li><a href="blog/html-css.html">CSS :inline vs :inline-block</a></li><br>
+        <li><a href="blog/javascript-dom.html">JavaScipt & DOM</a></li>
+      </ul>
     </div>
+
     <div id="projects" class="card">      
       <h3>Student Projects</h3>     
       <img class="card-img" src="images/studentprojectsimg.jpg" alt="html-code">
- 
       <ul>
         <li><a href="student projects/javacafe.html">Javascript Cafe</a></li>
-        <li>Example 2</li>
-        <li>Example 3</li>
       </ul>
     </div>
+
     <div class="card">       
       <h3>Personal Projects</h3>
       <img class="card-img" src="images/personalprojecs.jpg" alt="laptop,pad,pen">
-
       <ul>
         <li><a href="personal projects/jsbouncyballs/bouncyballs.html">JavaScript Practice</a></li>
         <li><a href="personal projects/jsmeditation/maditation.html">Meditation App</a></li>
-        <li>Exapmle 3</li>
       </ul>
-    </div>    
-  </div>
-<div id="contact-form">
-  <form method="post" action="">
-    <label> Send me a message below! </label>
-    <table>
-      <tr>
-    <td><input type="text" placeholder="First Name"></td> 
-    <td><input type="text" placeholder="Last Name"></td>
-      </tr>
-    </table>
-    <input type="email" placeholder="Email"><br>
-    <textarea id="message" name="message" placeholder="Write your message here and ill get back to you as soon as i can..."></textarea>
-    <input type="submit">
-  </form>
+    </div>   
   </div>
   <footer>
     <ul class="footer-icons">
-      <li><a href="https://www.instagram.com/s.amor_xo/"><img src="images/instagram (1).svg"></a></li>
+      <li><a href="https://www.instagram.com/s.amor_xo/"><img src="svg/instagram (1).svg"></a></li>
+      <li><a href=""><img src="svg/github.svg" alt=""></a></li>
     </ul>
     <p>I added in a couple extra cards above to make the responsive design a bit easier to see.</p>
   </footer>
