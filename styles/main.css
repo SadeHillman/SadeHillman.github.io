@@ -116,7 +116,7 @@ h3 {
 }
 
 .card {
-  padding: 0 20%;
+  padding: 0 10%;
   text-align: center;
 }
 
@@ -130,9 +130,9 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30vw;
-  height: 30vw;
-  border-radius: 10%;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 10px;
 }
 
 a {
@@ -176,6 +176,13 @@ a {
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  width: 300px;
+  height: 300px;
+}
+
+.slide img{
+  width: 300px;
+  height: 300px;
 }
 
 .slide.active {
@@ -236,14 +243,15 @@ ol {
     display: block;
   }
   .card {
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10%;
-    border: solid 1px gray;
-    box-shadow: 0 2px 2px 0 gray;
+    background-image: linear-gradient(180deg, white, #f1f1f1);
+    margin-bottom: 10px;
+    border: solid 2px gray;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 gray;
   }
-  .img-example {
-    padding: 20px;
+  .card img {
+    width: 10rem;
+    height: 10rem;
   }
 
   .navbar-list {
