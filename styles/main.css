@@ -60,8 +60,18 @@ ol {
       display: block;
     }
 
-    
+
 /********** INTRO **********/
+.bannerIndex{
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    padding: 200px;
+    background-image: url(../images/SadeHillman.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .banner {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
@@ -90,7 +100,7 @@ h2 {
 /****** Card-Container *******/
 #card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 20px;
 }
 
@@ -275,7 +285,9 @@ ol {
   }
 }
 
-footer {
+footer{
+  display: flex;
+  justify-content: center;
   background-color: #eaeaea;
   padding: 10px;
   margin-bottom: 0;
@@ -286,3 +298,4 @@ footer {
   width: 30px;
   height: 30px;
 }
+
