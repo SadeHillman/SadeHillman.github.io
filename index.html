@@ -11,37 +11,23 @@
   <title>Sade Homepage</title>
 </head>
 <body>
-  <nav class="navbar">
-    <ul class="navbar-list">
-      <li id="home" class="navbar-item"><a href="index.html">Home</a></li>
-      <li class="navbar-item">
-        <a href="#core-blog" class="dropdown-btn">Core-Blogs</a>
-        <div class="dropdown-content">
-          <a href="blog/emotional-intellegence.html" class="dropdown-item">Emotional-Intellegence</a>
-          <a href="blog/learning-plan.html" class="dropdown-item">Learning-Plan</a>
-          <a href="blog/identity-values.html" class="dropdown-item">Identity</a>
-          <a href="blog/neuroplasticity.html">Neuroplasticity</a>
-          <a href="blog/te-whare-tapa-wha.html">Te-Whare Tapa-Wha</a>
-        </div>
-      </li>
-      <li class="navbar-item">
-        <a href="#tech-blog" class="dropdown-btn">Tech-Blogs</a>
-        <div class="dropdown-content">
-          <a href="blog/javascript-dom.html" class="dropdown-item">JavaScipt & DOM</a>
-          <a href="blog/html-css.html" class="dropdown-item">CSS inline vs inline-block</a>
-          <a href="blog/problem-solving.html">Problem Solving</a>
-        </div>
-      </li>
-      <li class="navbar-item">
-        <a href="#projects" class="dropdown-btn">Projects</a>
-        <div class="dropdown-content">
-          <a href="/personal projects/jsmeditation/maditation.html" class="dropdown-item">Meditation App</a>
-          <a href="/personal projects/jsbouncyballs/bouncyballs.html" class="dropdown-item">BouncyBalls</a>
-          <a href="/student projects/javacafe.html" class="dropdown-item">JavaScript Café</a>
-        </div>
-      </li>
-    </ul>
-  </nav>  
+  <ul class="navbar">
+    <li>
+      <a href="index.html">HOME</a>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">CORE</a>
+      <div class="dropdown-content" id="coreDropdown"></div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">TECH</a>
+      <div class="dropdown-content" id="techDropdown"></div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">FUN</a>
+      <div class="dropdown-content" id="funDropdown"></div>
+    </li>
+  </ul>
   <div class="banner scroll-reveal">
     <h1>Kia Ora</h1>
     <h2>Im Sadé Hillman, welcome to my home page :)</h2>
@@ -102,7 +88,6 @@
     </ul>
     <p>I added in a couple extra cards above to make the responsive design a bit easier to see.</p>
   </footer>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="scrollReveal.js"></script>
+  <script src="/dropDown.js"></script>
 </body>
 </html>

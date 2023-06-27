@@ -11,35 +11,23 @@
   <title>Blog | inline vs inline-block</title>
 </head>
 <body>
-  <nav class="navbar">
-    <ul class="navbar-list">
-      <li id="home" class="navbar-item"><a href="../index.html">Home</a></li>
-      <li class="navbar-item">
-        <a href="../index.html#core-blog" class="dropdown-btn">Core-Blogs</a>
-        <div class="dropdown-content">
-          <a href="../blog/emotional-intellegence.html" class="dropdown-item">Emotional-Intellegence</a>
-          <a href="../blog/learning-plan.html" class="dropdown-item">Learning-Plan</a>
-          <a href="../blog/identity-values.html" class="dropdown-item">Identity</a>
-          <a href="../blog/neuroplasticity.html">Neuroplasticity & Growth Mindset</a>
-        </div>
-      </li>
-      <li class="navbar-item">
-        <a href="../index.html#tech-blog" class="dropdown-btn">Tech-Blogs</a>
-        <div class="dropdown-content">
-          <a href="../blog/javascript-dom.html" class="dropdown-item">JavaScipt & DOM</a>
-          <a href="../blog/html-css.html" class="dropdown-item">CSS inline vs inline-block</a>
-        </div>
-      </li>
-      <li class="navbar-item">
-        <a href="../index.html#projects" class="dropdown-btn">Projects</a>
-        <div class="dropdown-content">
-          <a href="../personal projects/jsmeditation/maditation.html" class="dropdown-item">Meditation App</a>
-          <a href="../personal projects/jsbouncyballs/bouncyballs.html" class="dropdown-item">BouncyBalls</a>
-          <a href="../student projects/javacafe.html" class="dropdown-item">JavaScript Café</a>
-        </div>
-      </li>
-    </ul>
-  </nav>  
+  <ul class="navbar">
+    <li>
+      <a href="/index.html">HOME</a>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">CORE</a>
+      <div class="dropdown-content" id="coreDropdown"></div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">TECH</a>
+      <div class="dropdown-content" id="techDropdown"></div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">FUN</a>
+      <div class="dropdown-content" id="funDropdown"></div>
+    </li>
+  </ul>
   <div class="banner">
   <h1>CSS Display: inline vs inline-block</h1>
 </div>
@@ -93,5 +81,6 @@
 </p>
 </div>
 <footer><a class="return"href="../index.html">Home-Page</a></footer>
+<script src='/blogDropDown.js'></script>
 </body>
 </html>
