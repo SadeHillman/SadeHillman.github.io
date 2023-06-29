@@ -30,11 +30,6 @@ ol {
       padding: 14px 16px;
       text-decoration: none;
     }
-    
-    .navbar li a.active {
-      background-color: #4CAF50;
-      color: white;
-    }
 
     .dropdown-content {
       display: none;
@@ -90,6 +85,8 @@ h2 {
 /******* ABOUT-ME *******/
 #about {
   text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 /****** Card-Container *******/
@@ -280,21 +277,18 @@ ol {
   }
 }
 
-footer{
-  display: flex;
-  justify-content: center;
-  background-color: #eaeaea;
-  padding: 10px;
-  margin-bottom: 0;
-  font-size: small;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.footer-icons img {
-  width: 30px;
-  height: 30px;
+.footer-content{
+  padding:20px 5rem;
+    width: 30px;
+    height: 30px;
 }
-
-
 /*****************About-me **************/
 .about-me{
   width: 100%;
