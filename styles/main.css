@@ -63,13 +63,8 @@ ol {
 
 /********** INTRO **********/
 .bannerIndex{
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-    padding: 200px;
-    background-image: url(../images/SadeHillman.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: fit-content;
 }
 
 .banner {
