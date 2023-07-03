@@ -29,6 +29,18 @@ const dropdownData = {
       text: 'Meditation',
       href: 'projects/jsmeditation/maditation.html',
     },
+    {
+      text: 'Whack-a-mole',
+      href: 'projects/js-carnival/whack-a-mole.html',
+    },
+    {
+      text: 'Unicorns',
+      href: 'projects/js-carnival/inflate-the-unicorn.html',
+    },
+    {
+      text: 'Dress Ups',
+      href: 'projects/js-carnival/dress-the-clown.html',
+    },
   ],
 }
 
