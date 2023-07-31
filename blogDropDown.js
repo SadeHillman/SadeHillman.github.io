@@ -2,11 +2,11 @@ const navbarContainer = document.getElementById('navbarContainer')
 
 const dropdownData = {
   core: [
-    { text: 'Foundations Reflections', href: 'foundations-reflections.html' },
+    { text: 'Bootcamp Wellbeing', href: 'wellbeingLp.html' },
     { text: 'Identity', href: 'identity-values.html' },
     { text: 'Learning Plan', href: 'learning-plan.html' },
     { text: 'Neuroplasticity', href: 'neuroplasticity.html' },
-    { text: 'Te Whare Tapa Wha', href: 'te-whare-tapa-wha.html' },
+    { text: 'Foundations Reflections', href: 'foundations-reflections.html' },
   ],
   tech: [
     { text: 'CSS: Display block vs inline', href: 'html-css.html' },
